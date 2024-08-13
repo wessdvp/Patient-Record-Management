@@ -22,8 +22,8 @@ Make sure you have Python installed on your system. This script uses the Tkinter
 
 ### Installation
 
-    Clone this repository or download the script file.
-    Run the script using Python.
+- Clone this repository or download the script file.
+- Run the script using Python.
 
 
 ### Interact with the Application
