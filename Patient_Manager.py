@@ -7,10 +7,13 @@ class PatientManager:
     def __init__(self, root):
         # list to store patient records
         self.patients = []
+        
         # dictionary to temporarily hold data for current patient
         self.patient_data = {}
+        
         # tracking field currently being filled out
         self.field_index = 0
+        
         # tuples: prompt string + key
         self.fields = [
             ("Enter patient name:", "Name"),
@@ -18,6 +21,7 @@ class PatientManager:
             ("Enter patient gender (M/F):", "Gender"),
             ("Enter medical history:", "Medical History")
         ]
+        
         # the main window settings
         self.root = root
         self.root.title("Patient Record Management")
@@ -171,7 +175,7 @@ class PatientManager:
         self.return_button = tk.Button(self.info_window, text="← Return to Main Menu", command=self.return_to_main_menu)
         self.return_button.pack(pady=10, anchor="w", padx=10)
 
-# actual patient list window, using a top (new) window
+    # actual patient list window, using a top (new) window
     def create_patient_list_window(self):
         self.clear_main_menu_widgets()
 
